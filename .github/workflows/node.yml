@@ -27,3 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: node client.js
+    - name: user defined action
+      uses: AureaMohammadAlavi/smash-docker-action@v1
+      with:
+        who-to-greet: 'Mohammad Alavi'
